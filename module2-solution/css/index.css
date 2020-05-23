@@ -1,7 +1,77 @@
-div, span {
-    background-color: blue;
+* {
+    box-sizing: border-box;
 }
 
-a:hover div:nth-child(5) {  
-    font-size: 24px;
+body{
+    background-color: thistle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+.row{
+    text-align: center;
+}
+
+.sec{
+    background-color: tomato;
+    display: inline-block;
+    width: 350px;
+    height: fit-content;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+.sec>p{
+    padding:10px;
+}
+
+.t{
+    float: right;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: .4em 2em;
+    border: 1px solid black;
+    width: auto;
+}
+
+h1,.t{
+    font-weight: bold;
+}
+#Chicken{
+    background-color: rgb(219, 138, 154);
+}
+
+#Beef{
+    background-color: rgb(214, 208, 124);
+}
+
+#Sushi{
+    background-color: rgb(150, 205, 226);
+}
+
+@media (min-width: 992px){
+    .sec{
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    #ff,#ss{
+        display: inline-block;
+        width: 40%;
+    }
+    #tt{
+        display: inline-block;
+        width: 82%;
+    }
+}
+
+@media (max-width: 767px){
+    .sec{
+        width: 100%;
+    }
 }
